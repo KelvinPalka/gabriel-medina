@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato - Gabriel Medina</title>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Site acadêmico sem fins lucrativos, apresentando dados gerias sobre o atletla brasileiro Gabriel Medina"
-    />
-    <meta name="keywords" content="Medina, Gabriel, Surf, Olímpiadas" />
-    <meta name="autor" content="Kelvin Palka" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="refresh" content="300" />
     <link rel="icon" type="image/jpg" href="img/Logo.jpg" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -22,91 +15,82 @@
           <li><a href="about.html">Sobre</a></li>
           <li><a href="highlights.html">Destaque</a></li>
           <li><a href="achievements.html">Conquistas</a></li>
-          <li><a href="curiosity.html">Curisosidades</a></li>
+          <li><a href="curiosity.html">Curiosidades</a></li>
           <li><a href="contact.html" class="active">Contato</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="banner">
-      <img src="img/banner-home.jpg" alt="Gabriel Medina" />
-    </div>
-
-    <main>
-      <div class="teaser">
-        <h1>Gabriel Medina: O Poseidon Brasileiro</h1>
-        <p>
-          Gabriel Medina é muito mais que um surfista de destaque mundial – ele
-          é um ícone do esporte, uma inspiração para milhões e o pioneiro de uma
-          nova era do surfe brasileiro. Conheça sua trajetória, conquistas e
-          legado que transformaram o surfe global.
-        </p>
+    <section class="container-waves">
+      <h1>Deixe um Comentário</h1>
+      <svg
+        class="ondas"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20962 10601"
+      >
+        <path
+          class="onda-1"
+          fill="#0086c3"
+          d="M27489 8635c504 1667 831 3818-27 5680s-2901 3434-6193 3904-7834-161-12155-589c-4321-427-8421-649-10976-1537-2555-889-3565-2443-4071-4061-505-1619-505-3302 938-4835 1442-1533 4327-2916 6274-3122s2958 764 3877 1522 1746 1304 2738 1382 2148-312 2976-730 1327-864 2136-1014c810-151 1929-6 2757 206s1363 490 1978 775c614 284 1308 574 1947 535s1223-407 1935-875c712-469 1552-1037 2240-1266 688-228 1223-117 1832 530 608 646 1290 1828 1794 3495z"
+        />
+        <path
+          class="onda-2"
+          fill="#66d4f2"
+          d="M25681 10400c-171 822-305 1990-646 3115-341 1124-889 2206-1856 2808-968 602-2355 724-4668 1064s-5550 898-8520 987-5672-290-9037-859c-3366-568-7394-1326-9403-2118-2008-791-1996-1616-1892-3305 103-1689 298-4242 1412-5731 1113-1488 3146-1912 4953-1627 1808 284 3390 1276 4522 1878s1814 814 2423 552 1145-998 2333-1388c1187-389 3025-432 4266 275 1240 707 1884 2164 2861 2407 976 244 2285-726 3493-1308 1209-581 2316-775 3731-567 1415 207 3137 815 4290 1221 1153 407 1737 612 1926 953 189 342-18 820-188 1643z"
+        />
+        <path
+          class="onda-3"
+          fill="#00bbef"
+          d="M30706 11822c-291 731-653 1801-1548 2972-895 1170-2321 2441-4988 3026-2667 586-6574 485-10469 541s-7778 268-10906-256-5501-1784-6906-3382c-1404-1598-1840-3533-1957-4910-118-1377 82-2195 1029-2854 946-659 2637-1158 4033-1002s2495 968 3440 1630 1737 1175 2905 1086c1169-89 2714-780 3810-1332 1095-552 1740-965 2665-820s2130 848 3110 1360c980 513 1734 837 2458 672s1416-819 2179-1050 1597-40 3058 269c1461 310 3550 739 5069 1177 1519 437 2469 883 2998 1112 529 228 639 240 584 440-55 201-274 591-564 1321z"
+        />
+      </svg>
+    </section>
+    <section class="container-form">
+      <div class="form">
+        <form name="contato" onsubmit="return validar()" method="get">
+          <h3 class="title-form">Fale Conosco</h3>
+          <div class="input-container">
+            <input type="text" name="Nome_do_Usuario" class="input" />
+            <label>Nome do Usuário</label>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label>Email</label>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="telefone" class="input" />
+            <label>Telefone</label>
+          </div>
+          <div class="input-container">
+            <select name="avaliacao" class="input">
+              <option></option>
+              <option>⭐ - Muito Ruim</option>
+              <option>⭐ ⭐ - Ruim</option>
+              <option>⭐ ⭐ ⭐ - Razoável</option>
+              <option>⭐ ⭐ ⭐ ⭐ - Bom</option>
+              <option>⭐ ⭐ ⭐ ⭐ ⭐ - Excelente</option>
+            </select>
+            <label>Nota de Avaliação do Site</label>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="Comentário" class="input"></textarea>
+            <label>Comentário</label>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+          <button type="reset" class="btn">Limpar</button>
+        </form>
       </div>
-      <section class="invites">
-        <div class="teaser-about">
-          <h2>Quem é?</h2>
-          <p>
-            Nascido em Maresias, São Paulo, Gabriel Medina começou a surfar
-            ainda jovem e rapidamente se destacou por sua habilidade e
-            dedicação. Hoje, ele é tricampeão mundial de surfe e um dos maiores
-            atletas da história do esporte.
-          </p>
-          <button href="about.html">Saiba mais</button>
-        </div>
-        <div class="teaser-achievements">
-          <h2>Conquistas</h2>
-          <ul class="marcador">
-            <li>Tricampeão Mundial de Surfe (2014, 2018, 2021)</li>
-            <li>Primeiro brasileiro a vencer o campeonato mundial</li>
-            <li>Bronze nas Olímpiadas de Paris - 2024</li>
-          </ul>
-          <button href="achievements.html">Conquistas</button>
-        </div>
-        <div class="teaser-highlight">
-          <h2>Medina Fora das Ondas</h2>
-          <p>
-            Além de suas vitórias no mar, Gabriel também é conhecido por seu
-            trabalho social através do Instituto Gabriel Medina, onde forma
-            novos talentos do surfe e oferece oportunidades para jovens de baixa
-            renda.
-          </p>
-          <button href="achievements.html">Destaques</button>
-        </div>
-        <div class="teaser-curiosity">
-          <h2>Você Sabia?</h2>
-          <p>
-            Você sabia que Gabriel Medina começou a surfar com apenas 9 anos de
-            idade e ganhou seu primeiro campeonato profissional aos 14?
-          </p>
-          <button href="curiosity.html">Curisosidades</button>
-        </div>
-      </section>
-      <div class="quote">
-        <p>
-          "Eu sempre sonhei em ser campeão mundial. Eu nunca desisti desse
-          sonho, e é isso que eu quero passar para todos os jovens que também
-          têm sonhos grandes."
-        </p>
-        <h3>- Gabriel Medina, 2014</h3>
-      </div>
-    </main>
+    </section>
 
     <a href="#top" class="back-to-top">
-        <img src="img/prancha.png" alt="Voltar ao topo" />
-      </a>
-  
-      <script src="js.js"></script>
+      <img src="img/prancha.png" alt="Voltar ao topo" />
+    </a>
 
-      <footer>
-        <div class="waves">
-          <div class="wave" id="wave1"></div>
-          <div class="wave" id="wave2"></div>
-          <div class="wave" id="wave3"></div>
-          <div class="wave" id="wave4"></div>
-        </div>
-  
-        <p>Kelvin Palka 2024 - &copyTodos os direitos reservados</p>
-        <p>Trabalho Acadêmico sem Fins Lucrativos</p>
-      </footer>
+    <script src="js.js"></script>
+
+    <footer>
+      <p>Kelvin Palka 2024 - &copyTodos os direitos reservados</p>
+      <p>Trabalho Acadêmico sem Fins Lucrativos</p>
+    </footer>
   </body>
 </html>
